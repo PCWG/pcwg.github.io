@@ -1,18 +1,499 @@
-<html>
-<body>
-<ul>
-<li><a href="2012-12-04/00 Kick-off Meeting Agenda (4 December 2012).pdf">00 Kick-off Meeting Agenda (4 December 2012)</a></li>
-<li><a href="2012-12-04/01 MA - RES - Power Curve Workshop Introduction.ppt>01 MA - RES - Power Curve Workshop Introduction</a></li>
-<li><a href="2012-12-04/02 DS - SSE - What are the issues.pptx>02 DS - SSE - What are the issues</a></li>
-<li><a href="2012-12-04/03 MB - AWS- Physical Mechanisms Behind Some Wind Turbine Performance Issues.pdf>03 MB - AWS- Physical Mechanisms Behind Some Wind Turbine Performance Issues</a></li>
-<li><a href="2012-12-04/04 AT - GLGH - How to Improve Energy Predictions.pptx>04 AT - GLGH - How to Improve Energy Predictions</a></li>
-<li><a href="2012-12-04/05 TB - RP -Influence of Turbine Design Choices.ppt></a></li>
-<li><a href="2012-12-04/06 AA - WG- Power_Curve_Modelling_WindGuard.ppt></a></li>
-<li><a href="2012-12-04/07 HJK - GE - Power Curve WG meeting RES 4Dec2012 final draft.pdf></a></li>
-<li><a href="2012-12-04/08 IA - SWP - Impact of non-standard inflow.ppt></a></li>
-<li><a href="2012-12-04/09a PM - NREL - Discussion Points.pptx></a></li>
-<li><a href="2012-12-04/09b AD - RES - Working Groups Relationship to IEC.pdf></a></li>
-<li><a href="2012-12-04/Final MoM 4th December 2012 Working Group.pdf></a></li>
-</ul>
-</body>
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>PCWG > Power Curve Working Group</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="pcwg.css" rel="stylesheet">
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-76846261-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">PCWG</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <!--<li class="active"><a href="#">Home</a></li>-->
+                <li><a href="#" scroll-to="About">About</a></li>
+                <li><a href="mailto:pcwg@res-ltd.com" >Contact</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Proceedings <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+				    <li><a scroll-to="Proceedings-2017-06-09">09 June 2017, Copenhagen</a></li>
+					<li><a scroll-to="Proceedings-2016-12-13">13 December 2016, Glasgow</a></li>
+				    <li><a scroll-to="Proceedings-2016-09-29">29 September 2016, Minneapolis</a></li>
+				    <li><a scroll-to="Proceedings-2016-09-08">08 September 2016, Pamplona</a></li>				
+					<li><a scroll-to="Proceedings-2016-08-10">10 August 2016, Colorado</a></li>
+					<li><a scroll-to="Proceedings-2016-05-20">20 May 2016, Frankfurt</a></li>
+					<li><a scroll-to="Proceedings-2016-03-10">10 March 2016, Hamburg</a></li>
+					<li><a scroll-to="Proceedings-2015-09-15">09 September 2015, London</a></li>
+					<li><a scroll-to="Proceedings-2015-10-08">08 October 2015, Aarhus</a></li>
+				    <li><a scroll-to="Proceedings-2015-09-15">15 September 2015, New Orleans</a></li>
+					<li><a scroll-to="Proceedings-2015-06-26">26 June 2015, Roskilde</a></li>
+					<li><a scroll-to="Proceedings-2015-05-08">08 May 2015, Glasgow</a></li>
+                    <li><a scroll-to="Proceedings-2015-03-25">25 Mar 2015, Hamburg</a></li>
+                    <li><a scroll-to="Proceedings-2014-12-16">16 Dec 2014, Glasgow</a></li>
+                    <li><a scroll-to="Proceedings-2014-10-06">06 Oct 2014, Denver</a></li>
+                    <li><a scroll-to="Proceedings-2014-09-02">02 Sep 2014, London</a></li>
+                    <li><a scroll-to="Proceedings-2014-04-01">01 Apr 2014, Roskilde</a></li>
+                    <li><a scroll-to="Proceedings-2013-12-04">04 Dec 2013, Glasgow</a></li>
+                    <li><a scroll-to="Proceedings-2013-09-19">19 Sep 2013, Aarhus</a></li> 
+                    <li><a scroll-to="Proceedings-2013-05-30">30 May 2013, Hamburg</a></li> 
+                    <li><a scroll-to="Proceedings-2013-03-12">12 Mar 2013, Brande</a></li>           
+                    <li><a scroll-to="Proceedings-2012-12-04">04 Dec 2012, London</a></li> 
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Road Maps <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+					<li><a href="roadmaps/PCWG-2017-Roadmap.pdf" target="_blank">2017 Road Map</a></li>
+					<li><a href="roadmaps/PCWG-2016-Roadmap.pdf" target="_blank">2016 Road Map</a></li>
+                    <li><a href="roadmaps/PCWG-2015-Roadmap.pdf" target="_blank">2015 Road Map</a></li>					
+                  </ul>
+                </li>				
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Proposals <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="proposals/PCWG-Inner-Outer-Range-Proposal-Dec-2013.pdf" target="_blank">Inner/Outer Range Proposal</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Analysis Tool <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+					<li><a href="tool/Power-Curve-Working-Group-Open-Source-Tool-Overview.pdf" target="_blank">Overview</a></li>
+                    <li><a href="https://github.com/peterdougstuart/PCWG" target="_blank">Source Code</a></li>
+					<li><a href="https://github.com/peterdougstuart/PCWG/releases" target="_blank">Executable</a></li>	
+					<li><a href="https://www.youtube.com/watch?v=ahAw4LtOEdY&feature=youtu.be" target="_blank">Screen Cast Demo</a></li>					
+                  </ul>
+                </li>	
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Datasets & Consensus Analysis <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    
+					<li><a href="consensus/Consensus Power Look Up Generation.xlsx" target="_blank">Power Look Up Generation</a></li> 
+					<li><a href="consensus/Consensus Zero Turbulence Power Curve Generation.xlsx" target="_blank">Zero Turbulence Power Curve Generation</a></li>
+					<li><a href="consensus/Consensus Analysis Turbulence Renormalisation Documentation.pdf" target="_blank">Turbulence Renormalisation Documentation</a></li>
+					
+					<li class="divider"></li>
+					
+					<li><a href="consensus/Dataset 1/Dataset 1.xls" target="_blank">Dataset 1</a></li> 
+                    <li><a href="consensus/Dataset 1/Dataset 1 - Consensus Rotor Equivalent Wind Speed.xls" target="_blank">Dataset 1 - Rotor Equivalent Wind Speed (REWS)</a></li>  
+                    <li><a href="consensus/Dataset 1/Dataset 1 - Consensus Rotor Equivalent Wind Speed with Veer.xls" target="_blank">Dataset 1 - REWS with Veer</a></li>  
+                    <li><a href="consensus/Dataset 1/Dataset 1 - Consensus Turbulence Renormalisation.xlsx" target="_blank">Dataset 1 - Turbulence Renormalisation</a></li>   
+                    <li><a href="consensus/Dataset 1/Dataset 1 - Consensus Rotor Equivalent Wind Speed and Turbulence Renormalisation.xlsx" target="_blank">Dataset 1 - REWS & Turbulence Renormalisation</a></li>            
+                    <li><a href="consensus/Dataset 1/Dataset 1 - Consensus Frequency Distribution Methods.xlsx" target="_blank">Dataset 1 - Frequency Distribution Methods</a></li>            
+					
+					<li class="divider"></li>
+					
+					<li><a href="consensus/Dataset 2/Dataset 2.xls" target="_blank">Dataset 2</a></li> 
+                    <li><a href="consensus/Dataset 2/Dataset 2 - Consensus Rotor Equivalent Wind Speed.xls" target="_blank">Dataset 2 - Rotor Equivalent Wind Speed (REWS)</a></li>  
+                    <li><a href="consensus/Dataset 2/Dataset 2 - Consensus Turbulence Renormalisation.xlsx" target="_blank">Dataset 2 - Turbulence Renormalisation</a></li>   
+                    <li><a href="consensus/Dataset 2/Dataset 2 - Consensus Rotor Equivalent Wind Speed and Turbulence Renormalisation.xlsx" target="_blank">Dataset 2 - REWS & Turbulence Renormalisation</a></li>
+
+					<li class="divider"></li>
+					
+					<li><a href="consensus/Dataset 3/Dataset 3.xls" target="_blank">Dataset 3</a></li> 
+                    <li><a href="consensus/Dataset 3/Dataset 3 - Consensus Rotor Equivalent Wind Speed.xls" target="_blank">Dataset 3 - Rotor Equivalent Wind Speed (REWS)</a></li>  
+                    <li><a href="consensus/Dataset 3/Dataset 3 - Consensus Turbulence Renormalisation.xlsx" target="_blank">Dataset 3 - Turbulence Renormalisation</a></li>   
+                    <li><a href="consensus/Dataset 3/Dataset 3 - Consensus Rotor Equivalent Wind Speed and Turbulence Renormalisation.xlsx" target="_blank">Dataset 3 - REWS & Turbulence Renormalisation</a></li>
+					
+					</ul>
+                </li>
+
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Intelligence Sharing <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+					<li><a href="PCWG-Share-01\PCWG-Share-01-Definition-Document.pdf" target="_blank">PCWG-Share-01 Definition Document</a></li>				
+                  </ul>
+                </li>	
+				
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+
+
+    <!-- Carousel
+    ================================================== -->
+	<div class="hide">
+    <div id="myCarousel" class="carousel slide " data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Example headline.</h1>
+              <img src="images/logo.png"  width="181" height="163">
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAGZmZgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Another example headline.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAFVVVQAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>One more for good measure.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.carousel -->
+	</div>
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row hide">
+        <div class="col-lg-4">
+          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+          <h2>Inner-Outer Range Proposal</h2>
+          <p><a class="btn btn-default" href="proposals/PCWG-Inner-Outer-Range-Proposal-Dec-2013.pdf" role="button" target="_blank">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+          <h2>Heading</h2>
+          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+	  
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider" id="About">
+
+      <div class="row featurette" >
+        <div class="col-md-7" ng-include="'about.html'"></div>
+        <div class="col-md-5">
+          &nbsp;<br>
+          &nbsp;<br>
+          &nbsp;<br>
+          <img src="images/logo_big.png" width="282" height="245">
+        </div>
+      </div>
+
+	  <hr class="featurette-divider" id="Proceedings-2017-06-09">
+
+      <div class="row featurette" >
+        <div class="col-md-7" ng-include="'proceedings/2017-06-09.html'"></div>
+	    <div class="col-md-5">
+          <!--<img src="images/comparison.png" width="471" height="258">-->
+        </div>
+      </div>
+	  
+      <hr class="featurette-divider" id="Proceedings-2016-12-13">
+
+	  <div class="row featurette" >
+        <div class="col-md-5">
+            <!--<img src="images/comparison.png" width="471" height="258">-->
+        </div>	  
+        <div class="col-md-7" ng-include="'proceedings/2016-12-13.html'"></div>
+      </div>
+	  
+	  <hr class="featurette-divider" id="Proceedings-2016-09-29">
+
+      <div class="row featurette" >
+        <div class="col-md-7" ng-include="'proceedings/2016-09-29.html'"></div>
+	    <div class="col-md-5">
+          <!--<img src="images/comparison.png" width="471" height="258">-->
+        </div>
+      </div>
+	  
+	  <hr class="featurette-divider" id="Proceedings-2016-09-08">
+	  
+	  <div class="row featurette" >
+        <div class="col-md-5">
+          <!--<img src="images/comparison.png" width="471" height="258">-->
+        </div>
+        <div class="col-md-7" ng-include="'proceedings/2016-09-08.html'"></div>
+      </div>
+	  
+	  <!-- -->
+	  <hr class="featurette-divider" id="Proceedings-2016-08-10">
+	  
+      <div class="row featurette" >
+        <div class="col-md-7" ng-include="'proceedings/2016-08-10.html'"></div>
+        <div class="col-md-5">
+            <img src="images/comparison.png" width="471" height="258">
+        </div>
+      </div>
+	  
+	  <hr class="featurette-divider" id="Proceedings-2016-05-20">
+
+      <div class="row featurette" >
+        <div class="col-md-5">
+          <img src="images/turbulence_variation_with_noise.png" width="381" height="271">
+        </div>
+        <div class="col-md-7" ng-include="'proceedings/2016-05-20.html'"></div>
+      </div>
+	  
+      <hr class="featurette-divider" id="Proceedings-2016-03-10">
+
+      <div class="row featurette" >
+        <div class="col-md-7" ng-include="'proceedings/2016-03-10.html'"></div>
+        <div class="col-md-5">
+            <img src="images/interpolation_issue.png" width="256" height="306">
+        </div>
+      </div>
+	  
+	  <hr class="featurette-divider" id="Proceedings-2015-12-09">
+
+      <div class="row featurette" >
+        <div class="col-md-5">
+          <img src="images/pcwg-share-01.png" width="421" height="238">
+        </div>
+        <div class="col-md-7" ng-include="'proceedings/2015-12-09.html'"></div>
+      </div>
+	  
+      <hr class="featurette-divider" id="Proceedings-2015-10-08">
+
+      <div class="row featurette" >
+        <div class="col-md-7" ng-include="'proceedings/2015-10-08.html'"></div>
+        <div class="col-md-5">
+            <img src="images/pcwg-share-01-wizard.png" width="320" height="224">
+        </div>
+      </div>
+	  
+      <hr class="featurette-divider" id="Proceedings-2015-09-15">
+
+      <div class="row featurette" >
+        <div class="col-md-5">
+          <img src="images/machine_learning.png" width="280" height="357">
+        </div>
+        <div class="col-md-7" ng-include="'proceedings/2015-09-15.html'"></div>
+      </div>
+	  
+      <hr class="featurette-divider" id="Proceedings-2015-06-26">
+
+      <div class="row featurette" >
+        <div class="col-md-7" ng-include="'proceedings/2015-06-26.html'"></div>
+        <div class="col-md-5">
+            <img src="images/financial_sensitivity.png" width="427" height="203">
+        </div>
+      </div>
+	  
+      <hr class="featurette-divider" id="Proceedings-2015-05-08">
+
+      <div class="row featurette" >
+        <div class="col-md-5">
+          <img src="images/nacelle_lidar.png" width="224" height="323">
+        </div>
+        <div class="col-md-7" ng-include="'proceedings/2015-05-08.html'"></div>
+      </div>
+	  
+      <hr class="featurette-divider" id="Proceedings-2015-03-25">
+
+      <div class="row featurette" >
+        <div class="col-md-7" ng-include="'proceedings/2015-03-25.html'"></div>
+        <div class="col-md-5">
+            <img src="images/trial_run.png" width="390" height="294">
+        </div>
+      </div>
+	  
+      <hr class="featurette-divider" id="Proceedings-2014-12-16">
+
+      <div class="row featurette" >
+        <div class="col-md-5">
+          <img src="images/adaptive.png" width="342" height="386">
+        </div>
+        <div class="col-md-7" ng-include="'proceedings/2014-12-16.html'"></div>
+      </div>
+
+      <hr class="featurette-divider" id="Proceedings-2014-10-06">
+
+      <div class="row featurette" >
+        <div class="col-md-7" ng-include="'proceedings/2014-10-06.html'"></div>
+        <div class="col-md-5">
+              &nbsp;<br>
+              &nbsp;<br>
+              &nbsp;<br>
+            <img src="images/us_map.png" width="390" height="294">
+        </div>
+      </div>
+
+      <hr class="featurette-divider"  id="Proceedings-2014-09-02">
+
+      <div class="row featurette">
+        <div class="col-md-5">
+          <img src="images/cfx_profiles.png" width="469" height="361">
+        </div>
+        <div class="col-md-7" ng-include="'proceedings/2014-09-02.html'"></div>
+      </div>
+
+      <hr class="featurette-divider" id="Proceedings-2014-04-01">
+
+      <div class="row featurette">
+        <div class="col-md-7" ng-include="'proceedings/2014-04-01.html'"></div>
+        <div class="col-md-5">
+          &nbsp;<br>
+          &nbsp;<br>
+          &nbsp;<br>
+          &nbsp;<br>
+          &nbsp;<br>
+          <img src="images/yaw_error.png">
+        </div>
+      </div>
+
+      <hr class="featurette-divider" id="Proceedings-2013-12-04">
+
+      <div class="row featurette" >
+        <div class="col-md-5">
+          &nbsp;<br>
+          &nbsp;<br>
+          <img src="images/ti_sensitivity.png" width="446" height="321">
+        </div>
+        <div class="col-md-7" ng-include="'proceedings/2013-12-04.html'"></div>
+      </div>
+
+      <hr class="featurette-divider" id="Proceedings-2013-09-19">
+
+      <div class="row featurette" >
+        <div class="col-md-7" ng-include="'proceedings/2013-09-19.html'"></div>
+        <div class="col-md-5">
+          <img src="images/rr_zero_turbulence.png" width="439" height="288">
+        </div>
+      </div>
+
+      <hr class="featurette-divider" id="Proceedings-2013-05-30">
+
+      <div class="row featurette" >
+        <div class="col-md-5">
+          &nbsp;<br>
+          &nbsp;<br>
+          &nbsp;<br>		
+          <img src="images/hamburg.jpg" width="397" height="263">
+        </div>
+        <div class="col-md-7" ng-include="'proceedings/2013-05-30.html'"></div>
+      </div>
+
+      <hr class="featurette-divider" id="Proceedings-2013-03-12">
+
+      <div class="row featurette" >
+        <div class="col-md-7" ng-include="'proceedings/2013-03-12.html'"></div>
+        <div class="col-md-5">
+          &nbsp;<br>
+		  &nbsp;<br>
+          &nbsp;<br>
+          &nbsp;<br>
+          &nbsp;<br>
+          &nbsp;<br>
+          &nbsp;<br>
+          &nbsp;<br>		  
+          <img src="images/rews_vs_wind_speed.png" width="429" height="260">
+        </div>
+      </div>
+
+      <hr class="featurette-divider" id="Proceedings-2012-12-04">
+
+      <div class="row featurette" > 
+        <div class="col-md-5">
+          &nbsp;<br>
+          &nbsp;<br>
+          &nbsp;<br>
+		<img src="images/power_matrix.png" width="441" height="260">
+        </div>
+        <div class="col-md-7" ng-include="'proceedings/2012-12-04.html'"></div>
+      </div>
+	  
+      <hr class="featurette-divider">
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a scroll-to="About" href="#">Back to top</a></p>
+        <!--<p>&copy; 2014 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>-->
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
 </html>
